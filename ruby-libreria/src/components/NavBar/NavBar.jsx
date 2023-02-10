@@ -14,9 +14,9 @@ const NavBar = () => {
                 <Nav className="me-auto">
                     <NavLink className={({ isActive })=> isActive ? 'btn btn-success' : 'btn btn-dark'} to="/categoria/remeras">Remeras</NavLink>
                     <NavLink className={({ isActive })=> isActive ? 'btn btn-success' : 'btn btn-dark'} to="/categoria/gorras">Gorras</NavLink>
-                    {/* <NavLink to="/categoria">Gorras</NavLink> */}
-                    {/* <NavDropdown title="Dropdown" id="collasible-nav-dropdown"> */}
-                    {/* <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+                    {<NavLink to="/categoria">Gorras</NavLink>}
+                    { <NavDropdown title="Dropdown" id="collasible-nav-dropdown"> }
+                    {<NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                     <NavDropdown.Item href="#action/3.2">
                         Another action
                     </NavDropdown.Item>
@@ -25,11 +25,10 @@ const NavBar = () => {
                     <NavDropdown.Item href="#action/3.4">
                         Separated link
                     </NavDropdown.Item>
-                    </NavDropdown> */}
+                    </NavDropdown> }
                 </Nav>
                 <Nav>
                     <Link to='/cart' >🛒</Link>
-                    
                     
                     <CartWidget />
                 </Nav>
